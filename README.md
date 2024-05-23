@@ -116,9 +116,23 @@ For the following target word: exalt
 
 
 **Possible paradigms that can be used to solve the problem**
+Logic Programming:  
+Logic programming is a paradigm based on defining facts rules and relationships. 
 
+For Wordle:
+- Define the dictionary of words as facts.
+- Define the rules for guessing and feedback.
 
 **Time complexity of my solution**
+
+`create_word_list`: O(n) where n is the number of words
+`select_word_solution`: O(1)
+`check_attempt`: O(m) where m is the length of the word
+
+`play_attempt`: O(n+m), where n is the number of words in the list and m is the length of the word.
+Since this function can be called up to attempts times, the worst-case time complexity is O(attempts×(n+m)).
+
+The overall Time Complexity is O(attempts×(n+m)), where attempts is 6 so time complexity can be deduced as O(n).
 
 
 ## References
