@@ -107,10 +107,39 @@ For the following target word: exalt
 
 
 ## Tests
+Solution word: crane  
+Expected:  
+Guess: house  
+_ _ _ _ e   
+Guess: crane  
+c r a n e   
+
+![image](https://github.com/ZValer/Wordle/assets/111622587/190b11dd-8d5e-4556-8bc6-2f0987861c76)  
+
+Solution word: plant 
+Expected:  
+Guess: water  
+_ [a] [t] _ _   
+Guess: worls  
+Invalid word. Try again.  
+Guess: world  
+_ _ _ [l] _  
+Guess: plant  
+p l a n t  
 
 
-*Add tests and how to run them.*
+![image](https://github.com/ZValer/Wordle/assets/111622587/e5ca4bf2-90e3-48a3-adc3-d448fc7793ca)  
 
+Solution word:  house  
+Expected:  
+Guess: round  
+_ o u _ _   
+Guess: plant  
+_ _ _ _ _   
+Guess: house  
+h o u s e   
+
+![image](https://github.com/ZValer/Wordle/assets/111622587/a8198203-b101-4b75-9716-ab2969e0d5c0)
 
 ## Analysis
 
@@ -125,13 +154,12 @@ For Wordle:
 
 **Time complexity of my solution**
 
-`create_word_list`: O(n) where n is the number of words
-`select_word_solution`: O(1)
-`check_attempt`: O(m) where m is the length of the word
-
-`play_attempt`: O(n+m), where n is the number of words in the list and m is the length of the word.
+`create_word_list`: O(n) where n is the number of words  
+`select_word_solution`: O(1)  
+`check_attempt`: O(m) where m is the length of the word  
+`play_attempt`: O(n+m), where n is the number of words in the list and m is the length of the word.  
 Since this function can be called up to attempts times, the worst-case time complexity is O(attempts×(n+m)).
-
+ 
 The overall Time Complexity is O(attempts×(n+m)), where attempts is 6 so time complexity can be deduced as O(n).
 
 
