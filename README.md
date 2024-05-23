@@ -135,7 +135,7 @@ Expected:
 Guess: round  
 _ o u _ _   
 Guess: plant  
-"_ _ _ _ _ "
+"_ _ _ _ _ "  
 Guess: house  
 h o u s e   
 
